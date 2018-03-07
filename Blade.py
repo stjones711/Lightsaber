@@ -11,7 +11,7 @@ class Blade(object):
         self.width = width
         self.height = height
 
-    def drawBlade(x, y, color, width = 200, height = 30):
+    def drawBlade(x, y = 250, color = "red", width = 200, height = 30):
         blade = Rectangle(Point(x, y), Point(x + width, y + height))
         blade.setFill(color)
         blade.setOutline("white")
@@ -20,8 +20,8 @@ class Blade(object):
 
     def main(win):
         """Runs the main code"""
-        Blade.drawBlade(200, 250, "red")
-        Blade.drawBlade(625, 250, "red")
+        Blade.drawBlade(200)
+        Blade.drawBlade(625)
 
 
 
